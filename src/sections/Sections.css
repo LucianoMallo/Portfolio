@@ -1,0 +1,34 @@
+.Home {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+  }
+    .Home-header {
+      display: flex;
+      justify-content: center;
+      padding: 10px;
+      text-align: center;
+      background-color: wheat;
+    }
+  
+    .Sudoku {
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+    }
+    .Sudoku-header {
+      display: flex;
+      justify-content: center;
+      padding: 10px;
+      text-align: center;
+      background-color: wheat;
+    }
+    .ContentContainer {
+      display: flex;
+      gap: 50px;
+      margin-top: 20px;
+      align-items: center;
+      justify-content: center;
+    }
