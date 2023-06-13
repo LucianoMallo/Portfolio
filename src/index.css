@@ -11,3 +11,16 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  body {
+    font-size: 14px; /* Example responsive font size */
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+    font-size: 12px; /* Example responsive font size */
+  }
+}

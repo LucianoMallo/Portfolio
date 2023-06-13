@@ -9,7 +9,7 @@ import { empty } from '../data/empty.js'
 function Board ({ sudokuArray = [] }) {
   const selectedCell = useSelector((state) => state.cells.selectedCell)
   const pullData = (data) => {
-    if (sudokuArray[selectedCell.rowIndex][selectedCell.columnIndex] === 0) {
+    if (selectedCell && sudokuArray[selectedCell.rowIndex][selectedCell.columnIndex] === 0) {
       sudokuArray[selectedCell.rowIndex][selectedCell.columnIndex] = data
     }
   }
@@ -36,7 +36,6 @@ function Board ({ sudokuArray = [] }) {
     ))
   }
   const isSolved = JSON.stringify(sudokuArray) === JSON.stringify(dataSolved)
-  console.log(isSolved)
   return (
 
     <BoardContainer className='Board'>
