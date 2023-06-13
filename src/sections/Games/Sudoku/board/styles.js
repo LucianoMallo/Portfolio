@@ -50,5 +50,5 @@ export const WinPanel = styled.div`
   border: 2px solid #000;
   padding: 20px;
   animation: ${fadeIn} 0.5s ease-in-out, ${scaleIn} 0.5s ease-in-out;
-  z-index: 1; /* Add a higher z-index to ensure the WinPanel appears above other elements */
+  z-index: 1;
 `

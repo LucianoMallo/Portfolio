@@ -18,18 +18,18 @@
 }
 
 #Navigation li {
-  margin: 0 50px;
+  margin: 0 20px;
 }
 
 #Navigation li a {
   color: inherit;
   text-decoration: none;
   position: relative;
-  transition: color 0.3s ease; /* Add a transition for smooth color change */
+  transition: color 0.3s ease;
 }
 
 #Navigation li a:hover {
-  color: coral; /* Change the link color on hover */
+  color: coral;
 }
 
 #Navigation li a::after {
@@ -40,12 +40,18 @@
   transform: translateX(-50%);
   width: 0;
   height: 2px;
-  background-color: coral; /* Set the separator color */
-  transition: width 0.3s ease; /* Add a transition for width change */
+  background-color: coral;
+  transition: width 0.3s ease;
 }
 
 #Navigation li a:hover::after {
-  width: 100%; /* Expand the separator width on hover */
+  width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+  #Navigation li {
+    margin: 0 10px; 
+  }
 }
 
 .content {
@@ -68,7 +74,7 @@
 }
 
 .Links {
-  margin: 0 10px; /* Adjust the margin as needed */
+  margin: 0 10px;
   color: wheat;
   text-decoration: none;
   position: relative;
