@@ -4,6 +4,7 @@ import { Routes, Route, Link } from 'react-router-dom'
 import About from './sections/About/About'
 import Home from './sections/Home/Home'
 import Sudoku from './sections/Games/Sudoku/Sudoku'
+import Contact from './sections/Contact/Contact'
 
 class App extends React.Component {
   render () {
@@ -16,10 +17,13 @@ class App extends React.Component {
                 <Link to='/Portfolio'>Home</Link>
               </li>
               <li>
-                <Link to='/about'>About</Link>
+                <Link to='/about'>About Me</Link>
               </li>
               <li>
                 <Link to='/sudoku'>Sudoku</Link>
+              </li>
+              <li>
+                <Link to='/contact'>Contact</Link>
               </li>
             </ul>
           </nav>
@@ -30,12 +34,13 @@ class App extends React.Component {
             <Route path='/Portfolio' element={<Home />} />
             <Route path='/about' element={<About />} />
             <Route path='/sudoku' element={<Sudoku />} />
+            <Route path='/contact' element={<Contact />} />
           </Routes>
         </div>
 
         <footer className='App-footer'>
           <div className='FooterLinks'>
-            <Link to='/' className='Links'>
+            <Link to='/Portfolio' className='Links'>
               Home
             </Link>
             <Link to='/' className='Links'>
