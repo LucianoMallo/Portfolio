@@ -6,6 +6,13 @@ import MineSweeper from './MineSweeper/MineSweeper'
 
 class Games extends React.Component {
   render () {
+    function Paragraph () {
+      return (
+        <p>Here you can see some game that i did on react and the one that are being developer</p>
+
+      )
+    }
+
     return (
       <div className='Games'>
         <nav>
@@ -24,7 +31,9 @@ class Games extends React.Component {
 
         <div className='GameContainer'>
           <h1>GAMES!</h1>
+
           <Routes>
+            <Route path='/' Component={Paragraph} />
             <Route path='sudoku' element={<Sudoku />} />
             <Route path='minesweeper' element={<MineSweeper />} />
             {/* Define other routes here */}

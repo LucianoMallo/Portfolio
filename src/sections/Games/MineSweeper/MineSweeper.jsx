@@ -5,6 +5,7 @@ class MineSweeper extends React.Component {
     return (
       <div className='MineSweeper'>
         <h1>MineSweeper</h1>
+        <p>Under construction...</p>
       </div>
     )
   }
