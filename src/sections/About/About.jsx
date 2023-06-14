@@ -1,7 +1,6 @@
 import React from 'react'
 import './About.css'
 import LinkedInLogo from '../../assets/images/LinkedIn_logo.png'
-import Logo from '../CommonComponents/Logo/Logo'
 
 class About extends React.Component {
   render () {
@@ -18,7 +17,17 @@ class About extends React.Component {
           I am always open to taking on challenges that help me grow professionally and improve my skills as a programmer. I am excited to join a dynamic team where I can contribute my technical skills, work ethic, and passion for programming. I am always willing to learn from others and contribute new ideas.
         </p>
         <div className='LinkedIn-container'>
-          <Logo text='LinkedIn' width={20} alt='LinkedIn Logo' height={20} src={LinkedInLogo} href='https://www.linkedin.com/in/luciano-mallo-tomaso/' />
+          <a href='https://www.linkedin.com/in/luciano-mallo-tomaso/'>
+            <img id='LinkedIn-Logo' src={LinkedInLogo} alt='LinkedIn Logo' href='https://www.linkedin.com/in/luciano-mallo-tomaso/' />
+          </a>
+          <a
+            className='LinkedIn'
+            href='https://www.linkedin.com/in/luciano-mallo-tomaso/'
+            target='_blank'
+            rel='noopener noreferrer'
+          >
+            Go to my LinkedIn
+          </a>
         </div>
       </div>
     )

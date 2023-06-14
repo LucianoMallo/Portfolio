@@ -1,5 +1,5 @@
 import { useDispatch, useSelector } from 'react-redux'
-import { selectCell, deselectCell, startTimer } from '../../../actions/actions'
+import { selectCell, deselectCell, startTimer } from '../../actions/actions'
 import { CellContainer } from './styles.js'
 
 export function Cell ({ number = ' ', rowIndex, columnIndex }) {

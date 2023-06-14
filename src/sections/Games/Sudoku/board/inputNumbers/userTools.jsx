@@ -1,13 +1,13 @@
 import React from 'react'
 import { Block, ToolsContainer } from './styles'
 import { useDispatch } from 'react-redux'
-import { deselectCell } from '../../../actions/actions'
+import { deselectCell } from '../../actions/actions'
 
 function UserTools (props) {
   const numbers = [
     ['1', '2', '3'],
     ['4', '5', '6'],
-    ['7', '8', '9']
+    ['7', '8', '9', '0']
   ]
   const dispatch = useDispatch()
 

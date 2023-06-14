@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import { useSelector, useDispatch } from 'react-redux'
-import { stopTimer, startTimer } from '../../../actions/actions'
+import { stopTimer, startTimer } from '../actions/actions'
 
 function Timer () {
   const [seconds, setSeconds] = useState(0)

@@ -3,21 +3,21 @@ import React from 'react'
 import { Routes, Route, Link } from 'react-router-dom'
 import About from './sections/About/About'
 import Home from './sections/Home/Home'
-import Games from './sections/Games/Games'
+import Sudoku from './sections/Games/Sudoku/Sudoku'
 import Contact from './sections/Contact/Contact'
 
 class App extends React.Component {
   render () {
     return (
       <div className='App'>
-        <div>
+        <header className='App-header'>
           <nav>
             <ul id='Navigation'>
               <li>
-                <Link to='/'>Home</Link>
+                <Link to='/Portfolio'>Home</Link>
               </li>
               <li>
-                <Link to='/about'>About</Link>
+                <Link to='/about'>About Me</Link>
               </li>
               <li>
                 <Link to='/sudoku'>Sudoku</Link>
@@ -31,9 +31,9 @@ class App extends React.Component {
 
         <div className='content'>
           <Routes>
-            <Route path='/Portfolio/*' element={<Home />} />
+            <Route path='/Portfolio' element={<Home />} />
             <Route path='/about' element={<About />} />
-            <Route path='/games/*' element={<Games />} />
+            <Route path='/sudoku' element={<Sudoku />} />
             <Route path='/contact' element={<Contact />} />
           </Routes>
         </div>
@@ -55,11 +55,13 @@ class App extends React.Component {
             <Link to='/about' className='Links'>
               Help
             </Link>
-            <Link to='/contact' className='Links'>
+            <Link to='/' className='Links'>
               Contact
             </Link>
           </div>
-          <div className='allRights'>Copyright 2016 DEMO Streaming All Right Reserved </div>
+          <div className='allRights'>
+            © {new Date().getFullYear()} - Luciano Ezequiel Mallo Tomaso All Right Reserved
+          </div>
         </footer>
       </div>
     )
