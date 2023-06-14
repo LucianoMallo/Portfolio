@@ -1,0 +1,29 @@
+    .Sudoku {
+      display: flex;
+      justify-content: center;
+      text-align: center;
+    }
+    @media (max-width: 480px) {
+
+      .Sudoku {
+        font-size: 14px; 
+        display: inline;
+      }
+
+      .ContentContainer {
+        display: inline;
+        gap: 50px;
+        margin-top: 2px;
+        align-items: center;
+        justify-content: center;
+      }
+
+    }
+
+    .ContentContainer {
+      display: flex;
+      gap: 50px;
+      margin-top: 20px;
+      align-items: center;
+      justify-content: center;
+    }

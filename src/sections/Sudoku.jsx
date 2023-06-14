@@ -1,10 +1,10 @@
 import { Provider } from 'react-redux'
 import React from 'react'
-import store from '../stores/store'
-import './Sections.css'
-import Board from '../components/board/board'
-import { Data } from '../components/data/data'
-import Timer from '../components/userTools/timer/timer'
+import store from './stores/store'
+import './Sudoku.css'
+import Board from './board/board'
+import { Data } from './data/data'
+import Timer from './timer/timer'
 
 class Sudoku extends React.Component {
   render () {

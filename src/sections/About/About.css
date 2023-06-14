@@ -1,0 +1,22 @@
+.About {
+  text-align: center;
+}
+h1 {
+  font-size: 32px;
+  color: #333;
+  margin-bottom: 20px;
+}
+.About-description {
+  font-size: 18px;
+
+  color: #666;
+  margin-bottom: 10px;
+text-align: center;
+}
+
+.LinkedIn-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
