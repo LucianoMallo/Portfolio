@@ -3,7 +3,7 @@ import React from 'react'
 import { Routes, Route, Link } from 'react-router-dom'
 import About from './sections/About/About'
 import Home from './sections/Home/Home'
-import Sudoku from './sections/Games/Sudoku/Sudoku'
+import Games from './sections/Games/Games'
 import Contact from './sections/Contact/Contact'
 
 class App extends React.Component {
@@ -17,10 +17,10 @@ class App extends React.Component {
                 <Link to='/Portfolio'>Home</Link>
               </li>
               <li>
-                <Link to='/about'>About Me</Link>
+                <Link to='/about'>About</Link>
               </li>
               <li>
-                <Link to='/sudoku'>Sudoku</Link>
+                <Link to='/games'>Games</Link>
               </li>
               <li>
                 <Link to='/contact'>Contact</Link>
@@ -31,9 +31,9 @@ class App extends React.Component {
 
         <div className='content'>
           <Routes>
-            <Route path='/Portfolio' element={<Home />} />
+            <Route path='/Portfolio/*' element={<Home />} />
             <Route path='/about' element={<About />} />
-            <Route path='/sudoku' element={<Sudoku />} />
+            <Route path='/games/*' element={<Games />} />
             <Route path='/contact' element={<Contact />} />
           </Routes>
         </div>
@@ -55,7 +55,7 @@ class App extends React.Component {
             <Link to='/about' className='Links'>
               Help
             </Link>
-            <Link to='/' className='Links'>
+            <Link to='/contact' className='Links'>
               Contact
             </Link>
           </div>
