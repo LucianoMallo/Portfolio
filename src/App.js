@@ -1,10 +1,10 @@
 import './App.css'
 import React from 'react'
 import { Routes, Route, Link } from 'react-router-dom'
-import About from './sections/About/About'
-import Home from './sections/Home/Home'
-import Games from './sections/Games/Games'
-import Contact from './sections/Contact/Contact'
+import About from './components/About/About'
+import Home from './components/Home/Home'
+import Games from './components/Games/Games'
+import Contact from './components/Contact/Contact'
 
 class App extends React.Component {
   render () {
