@@ -10,6 +10,9 @@ class App extends React.Component {
   render () {
     return (
       <div className='App'>
+        <head>
+          <title>Luciano Ezequiel Mallo Tomaso</title>
+        </head>
         <header className='App-header'>
           <nav>
             <ul id='Navigation'>

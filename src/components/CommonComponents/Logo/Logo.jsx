@@ -1,23 +1,21 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import { Container, Image, Link } from './Logo_Styles'
+import { Container, Image, Text } from './Logo_Styles'
 
 const Logo = ({ src, alt, width, height, href = null, text = null }) => {
   if (href == null && text == null) {
     return (
-      <Container>
-        <Image src={src} alt={alt} width={width} height={height} />
-      </Container>
+
+      <Image src={src} alt={alt} width={width} height={height} />
+
     )
   } else {
     return (
-      <Container>
-        <a href={href}>
-          <Image src={src} alt={alt} width={width} height={height} />
-        </a>
-        <Link href={href} target='_blank' rel='noopener noreferrer'>
+      <Container href={href} target='_blank' rel='noopener noreferrer' className='LogoLink'>
+        <Image src={src} alt={alt} width={width} height={height} />
+        <Text>
           {text}
-        </Link>
+        </Text>
       </Container>
     )
   }

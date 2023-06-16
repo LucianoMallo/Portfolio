@@ -31,7 +31,6 @@ class Games extends React.Component {
 
         <div className='GameContainer'>
           <h1>GAMES!</h1>
-
           <Routes>
             <Route path='/' Component={Paragraph} />
             <Route path='sudoku' element={<Sudoku />} />

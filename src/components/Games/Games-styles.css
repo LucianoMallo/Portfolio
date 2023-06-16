@@ -1,8 +1,18 @@
+.Games{
+  box-sizing: border-box;
+  flex: 1;
+  padding: 0 20px 0 20px;
+  background-color: #f2f2f2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
 #GamesNav {
     display: flex;
     justify-content: center;
     list-style-type: none;
-    padding: 0;
   }
   
   #GamesNav li {

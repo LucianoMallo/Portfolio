@@ -29,8 +29,11 @@ class Contact extends React.Component {
         <SocialLinks>
           <Logo text='LinkedIn' width={20} alt='LinkedIn Logo' height={20} src={LinkedInLogo} href='https://www.linkedin.com/in/luciano-mallo-tomaso/' />
           <Logo text='Github' width={20} alt='Github Logo' height={20} src={GithubLogo} href='https://github.com/LucianoMallo/Portfolio' />
-          <Logo width={70} height={30} alt='Email Logo' src={EmailLogo} />
-          <ContactButton onClick={handleContactClick}>Contact Me</ContactButton>
+
+          <ContactButton onClick={handleContactClick}>
+            <Logo width={70} height={30} alt='Email Logo' src={EmailLogo} />
+            <p>Contact Me</p>
+          </ContactButton>
         </SocialLinks>
 
       </ContactContainer>

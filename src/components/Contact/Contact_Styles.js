@@ -35,6 +35,9 @@ export const ListItem = styled.li`
 export const SocialLinks = styled.div`
   display: flex;
   margin-top: 16px;
+  a{
+    margin-right: 26px;
+  }
 `
 export const ContactButton = styled.button`
 display: inline-block;
@@ -46,6 +49,10 @@ border: none;
 cursor:pointer;
 border-radius: 20px;
 transition: background-color 0.3s ease;
+p{
+  margin: 0;
+  text-align: center;
+}
 &:hover {
   background-color: tomato;
 }
