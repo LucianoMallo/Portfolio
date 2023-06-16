@@ -1,15 +1,18 @@
 import './App.css'
 import React from 'react'
 import { Routes, Route, Link } from 'react-router-dom'
-import About from './sections/About/About'
-import Home from './sections/Home/Home'
-import Sudoku from './sections/Games/Sudoku/Sudoku'
-import Contact from './sections/Contact/Contact'
+import About from './components/About/About'
+import Home from './components/Home/Home'
+import Games from './components/Games/Games'
+import Contact from './components/Contact/Contact'
 
 class App extends React.Component {
   render () {
     return (
       <div className='App'>
+        <head>
+          <title>Luciano Ezequiel Mallo Tomaso</title>
+        </head>
         <header className='App-header'>
           <nav>
             <ul id='Navigation'>
@@ -17,10 +20,10 @@ class App extends React.Component {
                 <Link to='/Portfolio'>Home</Link>
               </li>
               <li>
-                <Link to='/about'>About Me</Link>
+                <Link to='/about'>About</Link>
               </li>
               <li>
-                <Link to='/sudoku'>Sudoku</Link>
+                <Link to='/games'>Games</Link>
               </li>
               <li>
                 <Link to='/contact'>Contact</Link>
@@ -31,9 +34,9 @@ class App extends React.Component {
 
         <div className='content'>
           <Routes>
-            <Route path='/Portfolio' element={<Home />} />
+            <Route path='/Portfolio/*' element={<Home />} />
             <Route path='/about' element={<About />} />
-            <Route path='/sudoku' element={<Sudoku />} />
+            <Route path='/games/*' element={<Games />} />
             <Route path='/contact' element={<Contact />} />
           </Routes>
         </div>
@@ -55,7 +58,7 @@ class App extends React.Component {
             <Link to='/about' className='Links'>
               Help
             </Link>
-            <Link to='/' className='Links'>
+            <Link to='/contact' className='Links'>
               Contact
             </Link>
           </div>

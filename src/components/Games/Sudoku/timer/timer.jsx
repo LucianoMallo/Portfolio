@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import { useSelector, useDispatch } from 'react-redux'
 import { stopTimer, startTimer } from '../actions/actions'
+import { StartButton } from './timer_Styles'
 
 function Timer () {
   const [seconds, setSeconds] = useState(0)
@@ -45,8 +46,8 @@ function Timer () {
       <h1>Timer</h1>
       <p>{formatTime(seconds)}</p>
       {isRunning
-        ? <button onClick={handleOnclick()}>Pause</button>
-        : <button onClick={handleOnclick()}>Start</button>}
+        ? <StartButton onClick={handleOnclick()}>Pause</StartButton>
+        : <StartButton onClick={handleOnclick()}>Start</StartButton>}
     </div>
   )
 }

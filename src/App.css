@@ -6,7 +6,7 @@
 
 .App-header {
   background-color: wheat;
-  padding: 10px;
+
   text-align: center;
 }
 
@@ -63,7 +63,8 @@
 .App-footer {
   background-color: black;
   color: wheat;
-  padding-bottom: 1%;
+  padding-top: 2%;
+  padding-bottom: 2%;
   text-align: center;
 }
 
