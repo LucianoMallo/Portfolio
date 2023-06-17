@@ -15,7 +15,7 @@ class App extends React.Component {
           <nav>
             <ul id='Navigation'>
               <li>
-                <Link to='/Portfolio'>Home</Link>
+                <Link to='/'>Home</Link>
               </li>
               <li>
                 <Link to='/about'>About</Link>
@@ -32,7 +32,7 @@ class App extends React.Component {
 
         <div className='content'>
           <Routes>
-            <Route path='/Portfolio/*' element={<Home />} />
+            <Route path='/*' element={<Home />} />
             <Route path='/about' element={<About />} />
             <Route path='/games/*' element={<Games />} />
             <Route path='/contact' element={<Contact />} />
@@ -41,7 +41,7 @@ class App extends React.Component {
 
         <footer className='App-footer'>
           <div className='FooterLinks'>
-            <Link to='/Portfolio' className='Links'>
+            <Link to='/' className='Links'>
               Home
             </Link>
             <Link to='/' className='Links'>
