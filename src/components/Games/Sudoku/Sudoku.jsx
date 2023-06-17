@@ -1,7 +1,7 @@
 import { Provider } from 'react-redux'
 import React from 'react'
 import store from './stores/store'
-import './Sections.css'
+import './Sudoku.css'
 import Board from './board/board'
 import { Data } from './data/data'
 import Timer from './timer/timer'
