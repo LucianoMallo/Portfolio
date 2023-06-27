@@ -8,6 +8,7 @@ export const Container = styled.div`
     margin-right: 10px;
     text-decoration: none;
     color: #fff;
+  }
 `
 export const Image = styled.img`
   width: ${props => props.width}px;
