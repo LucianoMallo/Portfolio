@@ -3,6 +3,8 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import Logo from '../CommonComponents/Logo/Logo'
 import codeLogo from '../../assets/images/codeLogo.png'
+import LinkPreview from '../CommonComponents/LinkPreview/LinkPreview'
+
 class Home extends React.Component {
   render () {
     return (
@@ -19,6 +21,7 @@ class Home extends React.Component {
             About Me
           </Link>
         </p>
+        {/* <LinkPreview url='https://www.google.com' /> */}
       </div>
     )
   }
