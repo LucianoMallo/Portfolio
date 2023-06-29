@@ -1,4 +1,4 @@
-.Games{
+.Projects{
   box-sizing: border-box;
   flex: 1;
   padding: 0 20px 0 20px;
@@ -9,28 +9,28 @@
   flex-direction: column;
 }
 
-#GamesNav {
+#ProjectsNav {
     display: flex;
     justify-content: center;
     list-style-type: none;
   }
   
-  #GamesNav li {
+  #ProjectsNav li {
     margin: 0 20px;
   }
   
-  #GamesNav li a {
+  #ProjectsNav li a {
     color: inherit;
     text-decoration: none;
     position: relative;
     transition: color 0.3s ease;
   }
   
-  #GamesNav li a:hover {
+  #ProjectsNav li a:hover {
     color: coral;
   }
   
-  #GamesNav li a::after {
+  #ProjectsNav li a::after {
     content: '';
     position: absolute;
     bottom: -2px;
@@ -42,12 +42,12 @@
     transition: width 0.3s ease;
   }
   
-  #GamesNav li a:hover::after {
+  #ProjectsNav li a:hover::after {
     width: 100%;
   }
   
   @media screen and (max-width: 768px) {
-    #GamesNav li {
+    #ProjectsNav li {
       margin: 0 10px; 
     }
   }

@@ -1,44 +1,45 @@
 import React from 'react'
-import './Games-styles.css'
+import './Projects-styles.css'
 import { Routes, Route, Link } from 'react-router-dom'
 import Sudoku from './Sudoku/Sudoku'
 import MineSweeper from './MineSweeper/MineSweeper'
+import Streamberry from './Streamberry/Streamberry'
 
-class Games extends React.Component {
+class Projects extends React.Component {
   render () {
     function Paragraph () {
       return (
         <>
-          <h1>GAMES!</h1>
+          <h1>Projects!</h1>
           <p>Here you can see some game that i did on react and the one that are being developer</p>
         </>
       )
     }
 
     return (
-      <div className='Games'>
+      <div className='Projects'>
 
         <nav>
-          <ul id='GamesNav'>
+          <ul id='ProjectsNav'>
             <li>
-              <Link to='/games/sudoku'>Sudoku</Link>
+              <Link to='/projects/sudoku'>Sudoku</Link>
             </li>
             <li>
-              <Link to='/games/minesweeper'>MineSweeper</Link>
+              <Link to='/projects/minesweeper'>MineSweeper</Link>
             </li>
             <li>
-              <Link to='/games/etc'>Coming soon</Link>
+              <Link to='/projects/streamberry'>Streamberry</Link>
             </li>
           </ul>
         </nav>
 
-        <div className='GameContainer'>
+        <div className='ProjectContainer'>
 
           <Routes>
             <Route path='/' Component={Paragraph} />
             <Route path='sudoku' element={<Sudoku />} />
             <Route path='minesweeper' element={<MineSweeper />} />
-            {/* Define other routes here */}
+            <Route path='streamberry' element={<Streamberry />} />
           </Routes>
         </div>
       </div>
@@ -46,4 +47,4 @@ class Games extends React.Component {
   }
 }
 
-export default Games
+export default Projects

@@ -27,7 +27,13 @@
     border-radius: 4px;
     transition: background-color 0.3s ease;
   }
-  
+  .Presentation{
+    display: flex;
+    justify-content: justify;
+    align-items: center;
+    flex-direction: column;
+  }
+
   .Home .About:hover {
     background-color: tomato;
   }

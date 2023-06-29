@@ -1,9 +1,11 @@
 import styled from 'styled-components'
 
 export const Container = styled.a`
-  display: flex; /* Added */
-  align-items: center; /* Added */
-  padding: 10px 20px;
+  display: inline-block;
+  
+  align-items: center;
+  justify-content: center;
+  padding: 10px 30px;
   background-color: coral;
   color: #fff;
   text-decoration: none;
