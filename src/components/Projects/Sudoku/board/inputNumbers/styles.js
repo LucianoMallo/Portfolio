@@ -1,6 +1,6 @@
 import styled from '@emotion/styled'
 
-export const Block = styled.div`
+export const Block = styled.button`
   justify-content: center;
   display: inline-flex;
   max-width: 20px;
@@ -11,6 +11,7 @@ export const Block = styled.div`
   user-select: none;
 `
 export const ToolsContainer = styled.div`
-max-width: 65px;
-padding: 0 20px;
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+margin-left: 20px ;
 `

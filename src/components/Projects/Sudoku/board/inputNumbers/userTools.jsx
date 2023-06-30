@@ -19,11 +19,9 @@ function UserTools (props) {
   return (
     <ToolsContainer className='userTools'>
       {numbers.map((row, rowIndex) => (
-        <div key={rowIndex}>
-          {row.map((number, columnIndex) => (
-            <Block onClick={() => handleOnClick(number)} key={columnIndex}>{number}</Block>
-          ))}
-        </div>
+        row.map((number, columnIndex) => (
+          <Block onClick={() => handleOnClick(number)} key={columnIndex}>{number}</Block>
+        ))
       ))}
     </ToolsContainer>
   )

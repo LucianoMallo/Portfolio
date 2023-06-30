@@ -13,7 +13,6 @@ class Sudoku extends React.Component {
         <div className='Sudoku'>
 
           <h1>Sudoku</h1>
-
           <div className='ContentContainer'>
             <Timer />
             <Board sudokuArray={Data} />

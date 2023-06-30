@@ -9,6 +9,7 @@ export const CellContainer = styled.div`
   border: 1px solid black;
   font-weight: bold;
   font-size: 16px;
+  color: black;
   user-select: none;
   &.clicked {
     background-color: #83bd39;

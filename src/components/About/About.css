@@ -1,17 +1,14 @@
 .About {
   text-align: center;
 }
-h1 {
+.Title {
   font-size: 32px;
-  color: #333;
   margin-bottom: 20px;
 }
 .About-description {
   font-size: 18px;
-
-  color: #666;
   margin-bottom: 10px;
-text-align: center;
+  text-align: center;
 }
 
 .LinkedIn-container {
