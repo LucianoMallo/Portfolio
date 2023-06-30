@@ -41,3 +41,19 @@
   .Home .About:active {
     background-color: crimson;
   }
+  .Home-links{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+.Previews{
+  list-style: none;
+    margin: 0;
+    padding: 0;
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(350px,1fr));
+    
+    width:100%;
+    gap: 5px;
+}

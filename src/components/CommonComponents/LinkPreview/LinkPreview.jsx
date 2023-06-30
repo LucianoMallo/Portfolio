@@ -1,25 +1,20 @@
-import { useState, useEffect } from 'react'
-import { getLinkPreviewData } from '../../../services/linkPreview'
+import { useFetchPreview } from '../../../hooks/useFetchPreview'
 
 const LinkPreview = ({ url }) => {
-  const [data, setData] = useState({})
-  useEffect(() => {
-    getLinkPreviewData({ url }).then((data) => {
-      setData(data)
-    })
-  }, [])
+  const { data, loading } = useFetchPreview({ url })
   if (url === null) return (<></>)
+  if (loading) return (<div className='link-preview__loading'>Loading...</div>)
   return (
-    <div className='link-preview'>
+    <a className='link-preview' href={data.url}>
       <div className='link-preview__image'>
         <img src={data.image} alt={data.title} />
       </div>
       <div className='link-preview__info'>
         <div className='link-preview__title'>{data.title}</div>
         <div className='link-preview__description'>{data.description}</div>
-        <div className='link-preview__url'>{data.url}</div>
+        <div className='link-preview__url' href={data.url}>{data.url}</div>
       </div>
-    </div>
+    </a>
   )
 }
 

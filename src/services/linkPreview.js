@@ -7,7 +7,12 @@ export const getLinkPreviewData = async ({ url = null }) => {
   try {
     const response = await fetch(`http://api.linkpreview.net/?key=${API_KEY}&q=${url}`)
     const urlData = await response.json()
-    return urlData
+    return {
+      title: urlData.title,
+      description: urlData.description,
+      image: urlData.image,
+      url: urlData.url
+    }
   } catch (error) {
     if (error.response && error.response.status === 429) {
       // Retry after 1 second

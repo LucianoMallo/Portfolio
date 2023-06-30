@@ -21,7 +21,16 @@ class Home extends React.Component {
             About Me
           </Link>
         </p>
-        {/* <LinkPreview url='https://www.google.com' /> */}
+        <div className='Home-Links'>
+          <ul className='Previews'>
+            <li>
+              <LinkPreview url='https://www.google.com' />
+            </li>
+            <li>
+              {/* <LinkPreview url='https://www..com' /> */}
+            </li>
+          </ul>
+        </div>
       </div>
     )
   }
