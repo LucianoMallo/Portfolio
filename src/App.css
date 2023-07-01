@@ -12,11 +12,14 @@
 }
 
 .main{
-  min-height: 75vh;
+  width: 100%;
+  min-height: 74vh;
   display: grid;
   grid-template-rows: 1fr auto;
 }
+
 .App-footer {
+  margin-top:20px;
   width: 100%;
   text-align: center;
   align-items: center;

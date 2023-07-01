@@ -1,20 +1,30 @@
 import { useFetchPreview } from '../../../hooks/useFetchPreview'
+import { LinkPreviewLoading, LinkPreviewContainer } from './LinkPreview_Styles'
+import LoadingSpinner from '../../../assets/images/Loading_Spinner.gif'
 
 const LinkPreview = ({ url }) => {
   const { data, loading } = useFetchPreview({ url })
   if (url === null) return (<></>)
-  if (loading) return (<div className='link-preview__loading'>Loading...</div>)
+
+  if (loading) {
+    return (
+      <LinkPreviewLoading>
+        <img src={LoadingSpinner} />
+        <p className='Link-Preview-Loading'>Loading...</p>
+      </LinkPreviewLoading>
+    )
+  }
   return (
-    <a className='link-preview' href={data.url}>
-      <div className='link-preview__image'>
+    <LinkPreviewContainer className='Link-Preview'>
+      <div className='link-preview_image'>
         <img src={data.image} alt={data.title} />
       </div>
-      <div className='link-preview__info'>
-        <div className='link-preview__title'>{data.title}</div>
-        <div className='link-preview__description'>{data.description}</div>
-        <div className='link-preview__url' href={data.url}>{data.url}</div>
+      <div className='link-preview_info'>
+        <div className='link-preview_title'>{data.title}</div>
+        <div className='link-preview_description'>{data.description}</div>
+        <a className='link-preview_url' target='_blank' href={data.url} rel='noreferrer'>Link: {data.url}</a>
       </div>
-    </a>
+    </LinkPreviewContainer>
   )
 }
 

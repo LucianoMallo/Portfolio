@@ -12,7 +12,7 @@ const Logo = ({ src, alt, width, height, href = null, text = null }) => {
   } else {
     return (
       <Container href={href} target='_blank' rel='noopener noreferrer' className='LogoLink'>
-        <Image src={src} alt={alt} width={width} height={height} />
+        <Image src={src} alt={alt} width={width} height={height} loading='lazy' />
         <Text>
           {text}
         </Text>
