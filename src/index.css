@@ -10,13 +10,13 @@
   --text-main: #dbdbdb;
   --text-bright: #fff;
   --text-muted: #a9b1ba;
-  --links: #41adff;
+  --links: #3bd695;
   --focus: #0096bfab;
   --border: #526980;
   --code: #ffbe85;
   --animation-duration: 0.1s;
   --button-base: #0c151c;
-  --button-hover: #040a0f;
+  --button-hover: #02572c;
   --scrollbar-thumb: var(--button-hover);
   --scrollbar-thumb-hover: rgb(0, 0, 0);
   --form-placeholder: #a9a9a9;

@@ -20,7 +20,7 @@ const LinkPreview = ({ url }) => {
         <img src={data.image} alt={data.title} />
       </div>
       <div className='link-preview_info'>
-        <div className='link-preview_title'>{data.title}</div>
+        <h3 className='link-preview_title'>{data.title}</h3>
         <div className='link-preview_description'>{data.description}</div>
         <a className='link-preview_url' target='_blank' href={data.url} rel='noreferrer'>Link: {data.url}</a>
       </div>

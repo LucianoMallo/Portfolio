@@ -1,5 +1,5 @@
 import React from 'react'
-import './Projects-styles.css'
+// import './Projects-styles.css'
 import { Routes, Route, Link } from 'react-router-dom'
 import Sudoku from './Sudoku/Sudoku'
 import MineSweeper from './MineSweeper/MineSweeper'

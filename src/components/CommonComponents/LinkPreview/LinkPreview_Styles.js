@@ -16,13 +16,13 @@ export const LinkPreviewLoading = styled.div`
 
 export const LinkPreviewContainer = styled.div`
 display: flex;
-gap:10px;
+gap: 5px;
 flex-direction: column;
 align-items: center;
 justify-content: center;
 
   img {
-    width: 150px;
+    width: 50px;
     height: auto;
     }
 `

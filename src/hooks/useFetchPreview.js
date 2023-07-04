@@ -6,22 +6,19 @@ export const useFetchPreview = ({ url }) => {
   const [data, setData] = useState({})
   const [loading, setLoading] = useState(true)
 
-  // useEffect(() => {
-  //   getLinkPreviewData({ url })
-  //     .then((data) => {
-  //       setData(data)
-  //       console.log({ data })
-  //     })
-  //     .catch((error) => {
-  //       console.log(error)
-  //     })
-  //     .finally(() => {
-  //       setLoading(false)
-  //     })
-  // }, [])
   useEffect(() => {
-    setData(results)
-    setLoading(false)
-  }, [data])
+    getLinkPreviewData({ url })
+      .then((data) => {
+        setData(data)
+        console.log({ data })
+      })
+      .catch((error) => {
+        console.log(error)
+      })
+      .finally(() => {
+        setLoading(false)
+      })
+  }, [])
+
   return { data, loading }
 }

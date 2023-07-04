@@ -10,12 +10,11 @@ export const ProjectsContainer = styled.div`
 export const ProjectsNavBar = styled.ul`
   justify-content: center;
   list-style: none;
-  margin: 0;
+  margin: 0px 150px 0px 150px;
   padding: 0;
   display: grid;
-  grid-template-columns: repeat(auto-fit,minmax(100px,1fr));
-  gap: 55px;
-  width:100%;
+  grid-template-columns: repeat(auto-fit,minmax(50px,1fr));
+  
 
   a:hover {
     position: relative;

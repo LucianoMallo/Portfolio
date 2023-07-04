@@ -8,9 +8,7 @@ class MineSweeper extends React.Component {
       <div className='MineSweeper'>
         <h1>MineSweeper</h1>
         <p>I'm migrating this game to react from my old javascript version.</p>
-
         <Logo src={codeLogo} alt='MineSweeper Link' width={30} height={30} href='https://lucianomallo.github.io/MineSweeperJS/' text='Go to play MineSweeper' />
-        <p>Under construction...</p>
       </div>
     )
   }
