@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react'
 import { getLinkPreviewData } from '../services/linkPreview'
-import results from '../services/mocks/results.json'
+// import results from '../services/mocks/results.json'
 
 export const useFetchPreview = ({ url }) => {
   const [data, setData] = useState({})
